@@ -4,7 +4,7 @@
 
 Metro DFS Api Collection To facilitate moving in Cairo Metro lines.<br>
 Project applying **DFS Algorithm** to the best road  FROM -> TO  stations :shipit:.<br>
-Choosing the best road depends on the number of stations the user can move through to reach the target.<br>
+Choosing the best road depends on **distance**  from Start Station to the target Station.<br>
 
 > [!NOTE]
 > Currently Cairo Metro has only three lines which are
