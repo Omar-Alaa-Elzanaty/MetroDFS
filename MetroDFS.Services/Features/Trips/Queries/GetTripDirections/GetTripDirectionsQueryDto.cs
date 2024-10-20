@@ -12,6 +12,7 @@ namespace MetroDFS.Services.Features.Trips.Queries.GetTripDirections
         public List<StationDto> Points { get; set; } = [];
         public List<StationsLine> Lines { get; set; } = [];
         public int TicketPrice { get; set; }
+        public float TotalDistance { get; set; }
     }
 
     public class StationsLine
@@ -19,6 +20,7 @@ namespace MetroDFS.Services.Features.Trips.Queries.GetTripDirections
         public int StartStationId { get; set; }
         public int TargetStationId { get; set; }
         public string Line { get; set; }
+        public float Distance { get; set; }
     }
 
     public class StationDto

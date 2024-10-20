@@ -60,11 +60,15 @@ namespace MetroDFS.Services.Features.Trips.Queries.GetTripDirections
                 response.Points.Add(roadStations.First(x => x.Id == tripRoad.points[index]));
                 if (index < tripRoad.points.Count - 1)
                 {
+                    var line = nodes.First(x => x.ParentStationId == tripRoad.points[index] && x.StationId == tripRoad.points[index + 1]);
+                    response.TotalDistance += line.Distance;
+
                     response.Lines.Add(new()
                     {
                         StartStationId = tripRoad.points[index],
                         TargetStationId = tripRoad.points[index + 1],
-                        Line = nodes.First(x => x.ParentStationId == tripRoad.points[index] && x.StationId == tripRoad.points[index + 1]).LineDirection
+                        Line = line.LineDirection,
+                        Distance = line.Distance
                     });
                 }
             }
