@@ -3,7 +3,7 @@
 ## OverView 🚀
 
 Metro DFS Api Collection To facilitate moving in Cairo Metro lines.<br>
-Project applying **DFS Algorithm** to the best road  FROM -> TO  stations :shipit:.<br>
+Project applying **DFS Algorithm** to find the best way  FROM -> TO  stations :shipit:.<br>
 Choosing the best road depends on **distance**  from Start Station to the target Station.<br>
 
 > [!NOTE]
